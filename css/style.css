@@ -504,7 +504,7 @@ a {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-buttom-subscribe-text {
+.footer-buttom-subscribe {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
