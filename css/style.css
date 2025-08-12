@@ -556,6 +556,7 @@ a {
   height: 24px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
+  fill: #2e2f42;
   border-radius: 50%;
   position: absolute;
   display: flex;
@@ -564,15 +565,18 @@ a {
   top: 24px;
   right: 24px;
   cursor: pointer;
-  transition: background-color 250ms ease;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-button-close:hover,
 .modal-form-button-close:focus {
   background-color: #404bbf;
   border: none;
+  fill: #ffffff;
 }
+
 .modal-form-svg-close {
-  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-list {
@@ -728,7 +732,9 @@ a {
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #user-privacy:hover ~ .modal-form-label-checkbox .modal-form-span-svg,
@@ -738,6 +744,8 @@ a {
 
 #user-privacy:checked ~ .modal-form-label-checkbox .modal-form-span-svg {
   background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
 }
 
 #user-privacy:checked
