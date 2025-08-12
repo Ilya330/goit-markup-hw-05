@@ -586,6 +586,7 @@ a {
 }
 
 .modal-form-label {
+  display: block;
   font-weight: 400;
   font-size: 12px;
 
@@ -722,7 +723,6 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   fill: transparent;
   top: 50%;
   left: 0;
