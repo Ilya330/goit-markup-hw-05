@@ -604,18 +604,22 @@ a {
   letter-spacing: 0.04em;
   color: #2e2f42;
   outline: none;
+  transition: border-color 250ms ease;
 }
 
 .modal-form-items:focus {
   border-color: #4d5ae5;
 }
-
+.modal-form-items:focus + svg {
+  fill: #4d5ae5;
+}
 .modal-form-svg-list {
   fill: #2e2f42;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 19px;
+  transition: fill 250ms ease;
 }
 
 .modal-form-list-textarea {
@@ -650,9 +654,9 @@ a {
   top: 50%;
   transform: translateY(-50%);
 }
-/* .modal-form-chekbox-polocy:focus {
-  background-color: red;
-} */
+.modal-form-chekbox-polocy:focus {
+  fill: red;
+}
 
 .modal-form-label.modal-form-label-checkbox {
   margin-left: 24px;
